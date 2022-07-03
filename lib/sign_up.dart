@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shadow/shadow.dart';
 import 'log_in.dart';
 
 class SignUp extends StatefulWidget {
@@ -209,40 +208,25 @@ class _SignUpState extends State<SignUp> {
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                      child: Shadow(
-                        offset: Offset(1, 2),
-                        blur: Blur(3.0, 3.0),
-                        opacity: 0.3,
-                        child: Container(
-                          child: Image.asset(
-                            'assets/images/google.png',
-                            scale: 2.2,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                      child: Shadow(
-                        offset: Offset(1, 2),
-                        blur: Blur(3.0, 3.0),
-                        opacity: 0.3,
+                      child: Container(
                         child: Image.asset(
-                          'assets/images/facebook.png',
+                          'assets/images/google.png',
                           scale: 2.2,
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                      child: Shadow(
-                        offset: Offset(1, 2),
-                        blur: Blur(3.0, 3.0),
-                        opacity: 0.3,
-                        child: Image.asset(
-                          'assets/images/twitter.png',
-                          scale: 2.2,
-                        ),
+                      child: Image.asset(
+                        'assets/images/facebook.png',
+                        scale: 2.2,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                      child: Image.asset(
+                        'assets/images/twitter.png',
+                        scale: 2.2,
                       ),
                     ),
                   ],
