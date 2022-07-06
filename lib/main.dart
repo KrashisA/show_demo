@@ -16,6 +16,12 @@ class _ShowAppState extends State<ShowApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: const Color(0xff1A6350),
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+      ),
       debugShowCheckedModeBanner: false,
       home: LogIn(),
     );

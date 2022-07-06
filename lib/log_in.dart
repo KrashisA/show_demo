@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
+
 import 'sign_up.dart';
 
 class LogIn extends StatefulWidget {
@@ -172,14 +174,18 @@ class _LogInState extends State<LogIn> {
                 padding: const EdgeInsets.fromLTRB(20, 5, 20, 10),
                 child: ElevatedButton(
                   onPressed: () {
-                    null;
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Home(),
+                        ));
                   },
                   style: ElevatedButton.styleFrom(
                     fixedSize: Size(312, 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    primary: Color(0xff1A6350),
+                    primary: Color.fromARGB(255, 26, 99, 80),
                     padding:
                         const EdgeInsets.symmetric(horizontal: 50, vertical: 0),
                     textStyle: TextStyle(
