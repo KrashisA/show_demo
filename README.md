@@ -11,7 +11,7 @@ This an app to show trending movies and tv series.
 - [ ] Profile page
 - [x] Bookmark page
 - [ ] Search bar
-- [ ] Product Detail page
+- [x] Product Detail page
 - [ ] Backend stuffs
 
 ## UI design in Figma:
