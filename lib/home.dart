@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:show_app/bookmark.dart';
+import 'package:show_app/homepage_real.dart';
+import 'package:show_app/screen/trending_screen.dart';
+import 'package:show_app/screen/tvseries_screen.dart';
 import 'homepage.dart';
+import 'page_profile.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -12,9 +17,9 @@ class _HomeState extends State<Home> {
   int pageIndex = 0;
 
   final pages = [
-    const HomePage(),
-    const Page1(),
-    const Page2(),
+    HomePage(),
+    MovieScreen(),
+    PageProfile(),
   ];
 
   @override
@@ -51,14 +56,14 @@ class _HomeState extends State<Home> {
               },
               icon: pageIndex == 0
                   ? const Icon(
-                      Icons.home_filled,
+                      Icons.home,
                       color: Color.fromARGB(255, 13, 81, 62),
-                      size: 30,
+                      size: 25,
                     )
                   : const Icon(
                       Icons.home_outlined,
                       color: Colors.grey,
-                      size: 30,
+                      size: 25,
                     ),
             ),
             IconButton(
@@ -72,12 +77,12 @@ class _HomeState extends State<Home> {
                   ? const Icon(
                       Icons.bookmark,
                       color: Color.fromARGB(255, 13, 81, 62),
-                      size: 30,
+                      size: 25,
                     )
                   : const Icon(
                       Icons.bookmark_border_outlined,
                       color: Colors.grey,
-                      size: 30,
+                      size: 25,
                     ),
             ),
             IconButton(
@@ -91,57 +96,15 @@ class _HomeState extends State<Home> {
                   ? const Icon(
                       Icons.person,
                       color: Color.fromARGB(255, 13, 81, 62),
-                      size: 30,
+                      size: 25,
                     )
                   : const Icon(
                       Icons.person_outline,
                       color: Colors.grey,
-                      size: 30,
+                      size: 25,
                     ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class Page1 extends StatelessWidget {
-  const Page1({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffC4DFCB),
-      child: Center(
-        child: Text(
-          "Page Number 1",
-          style: TextStyle(
-            color: Colors.green[900],
-            fontSize: 45,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffC4DFCB),
-      child: Center(
-        child: Text(
-          "Page Number 2",
-          style: TextStyle(
-            color: Colors.green[900],
-            fontSize: 45,
-            fontWeight: FontWeight.w500,
-          ),
         ),
       ),
     );
